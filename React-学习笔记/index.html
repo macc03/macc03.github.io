@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive - Macc的个人博客</title>
+  <title>React 学习笔记 - Macc的个人博客</title>
+  
+    <meta name="keywords" content="React">
   
 
   
@@ -104,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -227,7 +227,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -303,178 +303,275 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-	  <article id="arc" class="post article white-box reveal shadow">
-			
-			
-				
-				
-					
-						
-						<h2>2022</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-									<time>02-08</time>
-									
-										React 学习笔记
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						
-						<h2>2021</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/Javascript%E5%9F%BA%E7%A1%80%E5%A4%A7%E6%9D%82%E7%83%A9/">
-									<time>07-20</time>
-									
-										Javascript基础大杂烩
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-									<time>07-15</time>
-									
-										Hexo搭建个人博客
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/Javascript%E7%9A%84Map%E5%92%8CSet/">
-									<time>07-13</time>
-									
-										Javascript的Map和Set
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/Centos%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
-									<time>07-12</time>
-									
-										Centos入门基础知识
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/js%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-									<time>07-12</time>
-									
-										js正则表达式
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/Css-Flex-%E5%B8%83%E5%B1%80/">
-									<time>07-12</time>
-									
-										Css Flex 布局
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/Javascript%E7%9A%84%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/">
-									<time>07-11</time>
-									
-										Javascript的数组方法
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/this-is-a-test-post/">
-									<time>07-09</time>
-									
-										this is a test post
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/hello-world/">
-									<time>07-09</time>
-									
-										Hello World
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        React 学习笔记
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Feb 8, 2022</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="React 学习笔记" data-path="/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="React-学习笔记"><a href="#React-学习笔记" class="headerlink" title="React 学习笔记"></a>React 学习笔记</h2><h3 id="一、在Html中使用React"><a href="#一、在Html中使用React" class="headerlink" title="一、在Html中使用React"></a>一、在Html中使用React</h3><p>  使用CDN 引入</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;ie=edge&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./style.css&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Adopt Me<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;root&quot;</span>&gt;</span>not rendered<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/react@17.0.1/umd/react.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/react-dom@17.0.1/umd/react-dom.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Your code is going to go here</span></span></span><br><span class="line"><span class="javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>需要引入两个包：<code>react</code>、<code>react-dom</code></p>
+<p>使用<code>React.createElement()</code>创建元素，在使用<code>ReactDOM.render()</code>渲染到页面上</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const App = () =&gt; &#123;</span><br><span class="line">      return React.createElement(</span><br><span class="line">        &quot;div&quot;,</span><br><span class="line">        &#123;&#125;,</span><br><span class="line">        React.createElement(&quot;h1&quot;, &#123;&#125;, &quot;Adopt Me!&quot;)</span><br><span class="line">      );</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(React.createElement(App), 	document.getElementById(&#x27;root&#x27;));</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置项"><a href="#配置项" class="headerlink" title="配置项"></a>配置项</h3><h4 id="1-Prettier（可选）"><a href="#1-Prettier（可选）" class="headerlink" title="1. Prettier（可选）"></a>1. Prettier（可选）</h4><p>​    <code>Prettier</code>可以帮助我们格式化代码，保证代码的高质量和可读性。我们运行<code>npm install -D prettier</code>  进行安装。添加npm脚本，如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;format&quot;</span>: <span class="string">&quot;prettier --write \&quot;src/**/*.&#123;js,jsx&#125;\&quot;&quot;</span></span><br><span class="line">  	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-ESLint（可选）"><a href="#2-ESLint（可选）" class="headerlink" title="2. ESLint（可选）"></a>2. ESLint（可选）</h4><p>ESLint 会对你的代码进行检测，它会告诉你这个错误。运行<code>npm install -D eslint eslint-config-prettier</code> 进行安装，安装完之后，创建一个名叫<code>.eslintrc.json</code>的文件，写入如下的配置项：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;extends&quot;</span>: [<span class="string">&quot;eslint:recommended&quot;</span>, <span class="string">&quot;prettier&quot;</span>],</span><br><span class="line">  <span class="attr">&quot;plugins&quot;</span>: [],</span><br><span class="line">  <span class="attr">&quot;parserOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;ecmaVersion&quot;</span>: <span class="number">2021</span>,</span><br><span class="line">    <span class="attr">&quot;sourceType&quot;</span>: <span class="string">&quot;module&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;ecmaFeatures&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;jsx&quot;</span>: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;env&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;es6&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;browser&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;node&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这是ESLint 和 Prettier 推荐配置的组合，这会检测正常的JS的东西以及JSX的东西。添加npm脚本：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;lint&quot;</span>: <span class="string">&quot;eslint \&quot;src/**/*.&#123;js,jsx&#125;\&quot; --quiet&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-Parcel"><a href="#3-Parcel" class="headerlink" title="3. Parcel"></a>3. Parcel</h4><p><code>Parcel</code>是一个非常棒的打包工具，相比于Webpack，它是零配置的。</p>
+<p><code>Parcel</code> 将接收一个入口，并输入一个包含所有代码的完整文件。通过<code>npm install -D parcel@1.12.3</code> 安装，在<code>package.json</code> 添加：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;dev&quot;</span>: <span class="string">&quot;parcel src/index.html&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行之后，你的网站可以在<code>localhost:1234</code>访问了</p>
+<h4 id="4-Babel"><a href="#4-Babel" class="headerlink" title="4. Babel"></a>4. Babel</h4><p>运行<code>npm install -D @babel/core@7.12.16 @babel/preset-react@7.12.13</code> 安装，再新建一个名为<code>.babelrc</code> 的文件</p>
+<h4 id="5-ESLint-React"><a href="#5-ESLint-React" class="headerlink" title="5. ESLint + React"></a>5. ESLint + React</h4><p>帮助我们识别React代码</p>
+<p>运行<code>npm install -D eslint-plugin-import@2.22.1 eslint-plugin-jsx-a11y@6.4.1 eslint-plugin-react@7.22.0</code></p>
+<h4 id="6-Eslint-hooks"><a href="#6-Eslint-hooks" class="headerlink" title="6.  Eslint-hooks"></a>6.  Eslint-hooks</h4><p>运行<code>npm install -D eslint-plugin-react-hooks@4.2.0</code> 安装，在<code>.eslintrc.json</code> 添加</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;extends&quot;</span>: [</span><br><span class="line">    …</span><br><span class="line">    <span class="string">&quot;plugin:react-hooks/recommended&quot;</span>,</span><br><span class="line">    …</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="7-Class-propertites"><a href="#7-Class-propertites" class="headerlink" title="7. Class-propertites"></a>7. Class-propertites</h4><p>构造函数很烦人。我们可以使用一种叫做类属性的东西来使它更好，更容易阅读。类属性是JavaScript的一个新部分，所以当Parcel转换我们的代码时，我们需要Parcel对代码进行转换。幸运的是，我们的配置将自己完成这一点，因此不需要进一步的更改(以前我们确实需要)。</p>
+<p>运行<code>npm i -D @babel/plugin-proposal-class-properties@7.13.0 @babel/preset-env@7.13.5 @babel/eslint-parser@7.13.4</code>  ,修改<code>.babelrc</code> ：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;presets&quot;</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&quot;@babel/preset-react&quot;</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">&quot;runtime&quot;</span>: <span class="string">&quot;automatic&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;@babel/preset-env&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">&quot;plugins&quot;</span>: [<span class="string">&quot;@babel/plugin-proposal-class-properties&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>配置ESLint</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  …</span><br><span class="line">  <span class="attr">&quot;parser&quot;</span>: <span class="string">&quot;@babel/eslint-parser&quot;</span>,</span><br><span class="line">  …</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二、React的安装"><a href="#二、React的安装" class="headerlink" title="二、React的安装"></a>二、React的安装</h3><p>运行<code>npm install react@17.0.1 react-dom@17.0.1</code> ,这里安装的是17版本 。接下来我们就可以在代码中引用了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import React from &#x27;react&#x27;</span><br><span class="line">// ...</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="三、使用JSX创建组件"><a href="#三、使用JSX创建组件" class="headerlink" title="三、使用JSX创建组件"></a>三、使用JSX创建组件</h3><p>jsx会简化我们的代码</p>
+<h4 id="1-函数式组件"><a href="#1-函数式组件" class="headerlink" title="1. 函数式组件"></a>1. 函数式组件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const SomeComponent = () =&gt; &#123;</span><br><span class="line">    return (</span><br><span class="line">    	&lt;div&gt;</span><br><span class="line">	        ....</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-类组件"><a href="#2-类组件" class="headerlink" title="2. 类组件"></a>2. 类组件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Component &#125; from &#x27;react&#x27;</span><br><span class="line">class SomeComponent extends Component &#123;</span><br><span class="line">    constructor() &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    render() &#123;</span><br><span class="line">        return (</span><br><span class="line">        	&lt;div&gt;</span><br><span class="line">            	....</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h3><p>props可以实现父子组件数据的传递，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 父组件</span><br><span class="line">const ComponentA = () =&gt; &#123;</span><br><span class="line">    return (</span><br><span class="line">    	&lt;ComponentB name=&#x27;Luna&#x27; /&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">// 子组件</span><br><span class="line">const ComponentB = (props) =&gt; &#123;</span><br><span class="line">    return (</span><br><span class="line">    	&lt;h1&gt;&#123;`Hello, my name is $&#123;props.name&#125;`&#125;&lt;/h1&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Hooks"><a href="#Hooks" class="headerlink" title="Hooks"></a>Hooks</h3><p><em>Hook</em> 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性</p>
+<h4 id="useState"><a href="#useState" class="headerlink" title="useState"></a>useState</h4><p>使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123;useState&#125; from &#x27;react&#x27;</span><br><span class="line"></span><br><span class="line">const Counter = () =&gt; &#123;</span><br><span class="line">    const [count, setCount] = useState(0)</span><br><span class="line">    return (</span><br><span class="line">    	&lt;div&gt;</span><br><span class="line">        	&lt;p&gt;&#123;count&#125;&lt;/p&gt;</span><br><span class="line">            &lt;button onClick=&#123;() =&gt; setCount(count + 1)&#125;&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="useEffect"><a href="#useEffect" class="headerlink" title="useEffect"></a>useEffect</h4><p>在渲染之后执行，通常用于请求数据</p>
+<p>未完待续。</p>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://macc03.github.io/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/>https://macc03.github.io/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-02-14T18:35:50+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Feb 14, 2022</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/React/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>React</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://macc03.github.io/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=React 学习笔记 - Macc的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://macc03.github.io/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=React 学习笔记 - Macc的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://macc03.github.io/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=React 学习笔记 - Macc的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/Javascript%E5%9F%BA%E7%A1%80%E5%A4%A7%E6%9D%82%E7%83%A9/'>
+          <p class='title'>Javascript基础大杂烩<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Javascript 基础知识（杂）一、HTML中的Javascript1.1&lt;script&gt;标签
+async：可选。表示应该立即开始下载脚本，但不能阻止其他页面动作，比如下载资源或...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -482,103 +579,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Macc的个人博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Javascript/" style="font-size: 14px; color: #999">Javascript</a> <a href="/tags/React/" style="font-size: 14px; color: #999">React</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/javascript/" style="font-size: 24px; color: #555">javascript</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 19px; color: #777">正则表达式</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="toc-text">React 学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%9C%A8Html%E4%B8%AD%E4%BD%BF%E7%94%A8React"><span class="toc-text">一、在Html中使用React</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="toc-text">配置项</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Prettier%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">1. Prettier（可选）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-ESLint%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">2. ESLint（可选）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Parcel"><span class="toc-text">3. Parcel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-Babel"><span class="toc-text">4. Babel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-ESLint-React"><span class="toc-text">5. ESLint + React</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-Eslint-hooks"><span class="toc-text">6.  Eslint-hooks</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-Class-propertites"><span class="toc-text">7. Class-propertites</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81React%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-text">二、React的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%BD%BF%E7%94%A8JSX%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6"><span class="toc-text">三、使用JSX创建组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6"><span class="toc-text">1. 函数式组件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%B1%BB%E7%BB%84%E4%BB%B6"><span class="toc-text">2. 类组件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Props"><span class="toc-text">Props</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hooks"><span class="toc-text">Hooks</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#useState"><span class="toc-text">useState</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#useEffect"><span class="toc-text">useEffect</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
 		  
@@ -587,21 +609,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="React 学习笔记";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

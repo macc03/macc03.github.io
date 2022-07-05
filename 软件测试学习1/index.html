@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Tag: 正则表达式 - Macc的个人博客</title>
+  <title>软件测试学习1 - Macc的个人博客</title>
+  
+    <meta name="keywords" content="测试">
   
 
   
@@ -227,7 +227,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -302,128 +302,238 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        软件测试学习1
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
           
         
           
+            
+
+          
         
-      
-    
-    
-      
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jul 5, 2022</p>
+  </a>
+</div>
+
+          
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/js%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-        js正则表达式
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-        js正则表达式在 JavaScript 中，正则表达式通常用于两个字符串方法 : search() 和 replace()。
-search() 方法 用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串，并返回子串的起始位置。
-replace() 方法 用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
-12var str = &quot;Visit R...
-      
-    
+      <div id="lc-pv" data-title="软件测试学习1" data-path="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-07-12</time>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="测试的定义"><a href="#测试的定义" class="headerlink" title="测试的定义"></a>测试的定义</h2><ol>
+<li>使用人工或者自动的手段运行或者测试某个产品/系统的过程</li>
+<li>目的在于检验它是否满足规定的需求</li>
+<li>弄清 <strong>预期结果</strong> 和 <strong>实际结果</strong> 的差别</li>
+</ol>
+<p> 总结：以最小的人力物力和时间找出软件中潜在的错误和缺陷</p>
+<h2 id="测试基本要求"><a href="#测试基本要求" class="headerlink" title="测试基本要求"></a>测试基本要求</h2><p>功能测试、外观界面测试、易用测试、兼容性测试、安全性测试、性能测试</p>
+<h2 id="测试流程"><a href="#测试流程" class="headerlink" title="测试流程"></a>测试流程</h2><ol>
+<li><p>需求分析   阅读需求文档、产品文档、产品设计说明书、分析需求的点、参与需求评审</p>
+</li>
+<li><p>指定测试计划和测试方案  </p>
+<p>测试计划：测试整个项目的总体规划</p>
+<p>测试的范围、进度安排、人力物力的安排、整体的测试策略、风险的评估、风险的规避</p>
+<p>测试方案</p>
+<p>被测试的目标 选取什么样的测试工具、测试的方法、测试的重点</p>
+</li>
+</ol>
+<p>​    3. 设计测试用例</p>
+<pre><code>4. 执行测试用例
+ 5. 评估阶段  测试报告
+</code></pre>
+<h2 id="开发模型—-瀑布模型"><a href="#开发模型—-瀑布模型" class="headerlink" title="开发模型—-瀑布模型"></a>开发模型—-瀑布模型</h2><p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093620412.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093620412.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705093620412"></p>
+<p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093802924.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093802924.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705093802924"></p>
+<p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705094301247.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705094301247.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705094301247"></p>
+<h2 id="开发模型—-增量模型"><a href="#开发模型—-增量模型" class="headerlink" title="开发模型—-增量模型"></a>开发模型—-增量模型</h2><p>把瀑布模型的顺序特征与快速原型法的迭代特征相结合将软件看作一系列相互联系的增量， 在开发过程的各次迭代中，每<br>次完成其中的一一个增量</p>
+<h2 id="开发模型—-快速原型"><a href="#开发模型—-快速原型" class="headerlink" title="开发模型—-快速原型"></a>开发模型—-快速原型</h2><p>顾名思义，即快速分析、构造原型、运行原型、评价原型</p>
+<p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705095404377.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705095404377.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705095404377"></p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/js%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://macc03.github.io/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/>https://macc03.github.io/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-07-05T09:54:12+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jul 5, 2022</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Javascript%E7%9A%84%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/">
-        Javascript的数组方法
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        数组方法转载自https://zh.javascript.info/array-methods
-数组提供的方法有很多。为了方便起见，在本章中，我们将按组讲解。
-添加/移除数组元素我们已经学了从数组的首端或尾端添加和删除元素的方法：
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%B5%8B%E8%AF%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>测试</p></a></div>
 
-arr.push(...items) —— 从尾端添加元素，
-arr.pop() —— 从尾端提取元素，
-arr.shift() —— 从首端提取元素，
-arr...
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://macc03.github.io/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/&title=软件测试学习1 - Macc的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://macc03.github.io/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/&title=软件测试学习1 - Macc的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://macc03.github.io/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/&title=软件测试学习1 - Macc的个人博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-        <time>2021-07-11</time>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/Javascript%E7%9A%84%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/'>
-            Read More
-          </a>
-        </div>
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
+          <p class='title'>React 学习笔记<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>React 学习笔记一、在Html中使用React  使用CDN 引入
+123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;htm...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -431,103 +541,28 @@ arr...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Macc的个人博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Javascript/" style="font-size: 14px; color: #999">Javascript</a> <a href="/tags/React/" style="font-size: 14px; color: #999">React</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/javascript/" style="font-size: 24px; color: #555">javascript</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 19px; color: #777">正则表达式</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">测试的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E5%9F%BA%E6%9C%AC%E8%A6%81%E6%B1%82"><span class="toc-text">测试基本要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B"><span class="toc-text">测试流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B%E2%80%94-%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">开发模型—-瀑布模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B%E2%80%94-%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B"><span class="toc-text">开发模型—-增量模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B%E2%80%94-%E5%BF%AB%E9%80%9F%E5%8E%9F%E5%9E%8B"><span class="toc-text">开发模型—-快速原型</span></a></li></ol>
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
 		  
@@ -536,8 +571,8 @@ arr...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="软件测试学习1";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

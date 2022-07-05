@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>软件测试学习1</title>
+      <link href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/"/>
+      <url>/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A01/</url>
+      
+        <content type="html"><![CDATA[<h2 id="测试的定义"><a href="#测试的定义" class="headerlink" title="测试的定义"></a>测试的定义</h2><ol><li>使用人工或者自动的手段运行或者测试某个产品/系统的过程</li><li>目的在于检验它是否满足规定的需求</li><li>弄清 <strong>预期结果</strong> 和 <strong>实际结果</strong> 的差别</li></ol><p> 总结：以最小的人力物力和时间找出软件中潜在的错误和缺陷</p><h2 id="测试基本要求"><a href="#测试基本要求" class="headerlink" title="测试基本要求"></a>测试基本要求</h2><p>功能测试、外观界面测试、易用测试、兼容性测试、安全性测试、性能测试</p><h2 id="测试流程"><a href="#测试流程" class="headerlink" title="测试流程"></a>测试流程</h2><ol><li><p>需求分析   阅读需求文档、产品文档、产品设计说明书、分析需求的点、参与需求评审</p></li><li><p>指定测试计划和测试方案  </p><p>测试计划：测试整个项目的总体规划</p><p>测试的范围、进度安排、人力物力的安排、整体的测试策略、风险的评估、风险的规避</p><p>测试方案</p><p>被测试的目标 选取什么样的测试工具、测试的方法、测试的重点</p></li></ol><p>​    3. 设计测试用例</p><pre><code>4. 执行测试用例 5. 评估阶段  测试报告</code></pre><h2 id="开发模型—-瀑布模型"><a href="#开发模型—-瀑布模型" class="headerlink" title="开发模型—-瀑布模型"></a>开发模型—-瀑布模型</h2><p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093620412.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093620412.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705093620412"></p><p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093802924.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705093802924.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705093802924"></p><p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705094301247.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705094301247.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705094301247"></p><h2 id="开发模型—-增量模型"><a href="#开发模型—-增量模型" class="headerlink" title="开发模型—-增量模型"></a>开发模型—-增量模型</h2><p>把瀑布模型的顺序特征与快速原型法的迭代特征相结合将软件看作一系列相互联系的增量， 在开发过程的各次迭代中，每<br>次完成其中的一一个增量</p><h2 id="开发模型—-快速原型"><a href="#开发模型—-快速原型" class="headerlink" title="开发模型—-快速原型"></a>开发模型—-快速原型</h2><p>顾名思义，即快速分析、构造原型、运行原型、评价原型</p><p><img src="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705095404377.png" class="lazyload" data-srcset="C:\Users\Uni\AppData\Roaming\Typora\typora-user-images\image-20220705095404377.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20220705095404377"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>React 学习笔记</title>
       <link href="/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/React-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
